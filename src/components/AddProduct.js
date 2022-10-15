@@ -20,7 +20,7 @@ const AddProduct = () => {
         console.warn(name, link)
         const userid = JSON.parse(localStorage.getItem('user'))
         console.warn({ "UserID": userid._id })
-        let result = await fetch('https://tybca.herokuapp.com/add-product', {
+        let result = await fetch('https://tybcap.herokuapp.com/add-product', {
             method: 'post',
             body: JSON.stringify({ name, link, userid }),
             headers: {
